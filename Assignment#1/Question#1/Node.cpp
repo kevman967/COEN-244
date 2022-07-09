@@ -3,7 +3,7 @@
 using namespace std;
 Node::Node(){
 
-    cout<<"A new Node has been created"<<endl;
+    cout<<"A new Node has been created"<<endl; //Verifying that the object has been created
 }
 int Node::get_data(){
     return data;
@@ -19,8 +19,8 @@ void Node::set_id(int id1){
 }
 Node Node::clone(){
     Node v;
-    int id1 = ++id;
-    v.data = this->data;
+    int id1 = ++id; //The identity of the clone is going to be +1 from the original node so that their identities are not the same
+    v.data = this->data; //clones the data from the original to the clone
     v.id = id1; 
     return v;
 }

@@ -2,14 +2,14 @@
 #define NODE_H_
 class Node{
     private:
-    int data;
-    int id;
+    int data; //data value
+    int id; //unique identity
     public:
-    Node();
-    int get_data();
-    int get_id();
-    void set_data(int);
-    void set_id(int);
-    Node clone();
+    Node(); //constructor
+    int get_data(); //getter for data value
+    int get_id(); // getter for unique identity
+    void set_data(int); // setter for data value
+    void set_id(int); // setter for unique identity
+    Node clone(); //clone function
 };
 #endif
