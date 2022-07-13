@@ -2,6 +2,7 @@
 #include <iostream>
 using namespace std;
 NodeList::NodeList(){
+    numItems=0;
     items = new Node [LIST_SIZE];
     cout<<"A NodeList object has been created\n";
 }
@@ -13,7 +14,7 @@ NodeList::~NodeList(){
     cout<<"A NodeList object has been destroyed\n";
 }
 void NodeList::print(){
-    for(int i =0; i<=numItems;i++){
+    for(int i =0; i<numItems;i++){
         cout <<"Node: "<<items[i].get_id()<<" Data: "<<items[i].get_data()<<endl;
     }
 }

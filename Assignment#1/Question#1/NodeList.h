@@ -1,5 +1,6 @@
-#include "Node.cpp"
 
+
+#include "Node.cpp"
 class NodeList{
  private: 
  static const size_t LIST_SIZE = 500; // the maximum items in the list
@@ -10,14 +11,9 @@ class NodeList{
  NodeList(const NodeList&);
  ~NodeList();
  void print();
- bool check_node(Node);
- //getter
+ bool check_Node(int,int);
  size_t get_LIST_SIZE();
- Node get_items();
  size_t get_numItems();
- //setter
-// void set_LIST_SIZE(size_t);
- void set_items(Node);
- void set_numItems(size_t);
-
+ void add_Node(Node&);
+ void delete_Node(int);
 };

@@ -1,9 +1,15 @@
+
 #include "Node.h"
 #include <iostream>
 using namespace std;
 Node::Node(){
 
     cout<<"A new Node has been created"<<endl; //Verifying that the object has been created
+}
+Node::Node(int id1,int data1){
+    id = id1;
+    data = data1;
+    cout<<"Node "<<id1<<" has been created\n";
 }
 int Node::get_data(){
     return data;
